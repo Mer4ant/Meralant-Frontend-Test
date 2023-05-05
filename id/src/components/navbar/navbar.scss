@@ -1,0 +1,85 @@
+@import '../../pages/main/main.scss';
+
+header {
+    font-family: 'Poppins';
+
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 25px 350px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(37.5px);
+
+    .logo {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        text-decoration: none;
+        color: $black;
+
+        cursor: pointer;        
+    }
+
+    .frappe {
+        span {
+            vertical-align: middle;
+            margin-left: 10px;
+
+            color: $white;
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 9px;
+            line-height: 14px;
+            text-align: center; 
+
+            background: $black;
+            border-radius: 3px;
+            padding: 3px 7px;
+        }
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            list-style: none;
+
+            &:not(:last-child) {
+                margin: 0 50px 0 0;
+            }
+
+            a {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                text-decoration: none;
+                color: $black;
+            }
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    header {
+        background: rgba(0, 0, 0, 0.25);
+        .logo { color: $white; }
+        .frappe { span { color: $black; background: $white; } }
+        ul { li { a { color: $white; } } }
+    }
+}
+
+@media only screen and (max-width: 394px) {
+    body {
+        display: none;
+    }
+}
