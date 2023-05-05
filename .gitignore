@@ -79,10 +79,6 @@ web_modules/
 .env.production.local
 .env.local
 
-# other
-/id/src/assets/fonts/
-.idea
-
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 .parcel-cache
