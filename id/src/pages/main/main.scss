@@ -43,11 +43,6 @@ main {
 	justify-content: center;
 	align-items: center;
 
-    section {
-        // padding-right: 350px;
-        // padding-left: 350px;
-    }
-
     .section-main {
         padding-top: 250px;
         
@@ -117,10 +112,13 @@ main {
             color: $black;
 
             margin-top: 15px;
+
+            word-wrap: break-word;
         }
 
         img {
             margin-top: 50px;
+            max-width: calc(100% + 250px);
         }
     }
 
@@ -179,10 +177,43 @@ main {
        .section-two { h2 { background: linear-gradient(89.95deg, #1DDEBB -0.67%, #0794F3 99.95%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }  p { color: $white; } img { content: url("../../../public/imgs/frameBlack.png"); } }
        .section-tree { h2 { background: linear-gradient(90.05deg, #38A0FF 0.04%, #FF00E5 99.96%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; } p { color: $white; } img { content: url("../../../public/imgs/frappeBlack.png"); } }
     }
+}
 
-    footer {
-        .left { .text { color: $white; } .copyright { color: $two-color-black; } }
-        .right { .links { .services, .about, .follow-us { .title { color: $white; } div { a { color: $two-color-black; } } } } .agreements { a { color: $two-color-black; } } }
+@media only screen and (max-width: 1450px) {
+    main {
+        padding: 77px 250px 0 250px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    main {
+        padding: 77px 225px 0 225px;
+
+        .section-two {
+            img {
+                max-width: calc(100% + 75px);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    main {
+        padding: 77px 125px 0 125px;
         
+        .section-two {
+            h2 {
+                font-size: 48px;
+            }
+            img {
+                max-width: calc(100% + 50px);
+            }
+        }
+
+        .section-tree {
+            h2 {
+                font-size: 58px;
+            }
+        }
     }
 }

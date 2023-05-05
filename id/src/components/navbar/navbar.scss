@@ -78,8 +78,20 @@ header {
     }
 }
 
-@media only screen and (max-width: 394px) {
-    body {
-        display: none;
+@media only screen and (max-width: 1450px) {
+    header {
+        padding: 25px 250px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    main {
+        padding: 25px 225px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    header {
+        padding: 25px 125px;
     }
 }

@@ -6,6 +6,7 @@ footer {
     font-family: 'SF UI Display';
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     .left {
         display: flex;
@@ -26,7 +27,7 @@ footer {
             line-height: 17px;
             color: $two-color-white;
 
-            margin-top: 100px;
+            margin-top: 107px; // Yeah dude 7 is not cool, but that's the indentation in figma, I can't help it.
         }
     }
 
@@ -77,6 +78,7 @@ footer {
             justify-content: flex-end;
 
             margin-top: 50px;
+            align-self: flex-end;
             a {
                 font-style: normal;
                 font-weight: 400;
@@ -92,8 +94,41 @@ footer {
 }
 
 @media (prefers-color-scheme: dark) {
+    footer { .left { .text { color: $white; } .copyright { color: $two-color-black; } } .right { .links { .services, .about, .follow-us { .title { color: $white; } div { a { color: $two-color-black; } } } } .agreements { a { color: $two-color-black; } } } }
+}
+
+@media only screen and (max-width: 1450px) {
     footer {
-        .left { .text { color: $white; } .copyright { color: $two-color-black; } }
-        .right { .links { .services, .about, .follow-us { .title { color: $white; } div { a { color: $two-color-black; } } } } .agreements { a { color: $two-color-black; } } }
+padding: 0px 250px 25px 250px;
+
+        .right {
+            .links {
+                gap: 50px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    footer {
+        padding: 0px 225px 25px 225px;
+
+        .right {
+            .links {
+                gap: 50px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    footer {
+        padding: 0px 125px 25px 125px;
+
+        .right {
+            .links {
+                gap: 40px;
+            }
+        }
     }
 }
