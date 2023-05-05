@@ -97,13 +97,25 @@ footer {
     footer { .left { .text { color: $white; } .copyright { color: $two-color-black; } } .right { .links { .services, .about, .follow-us { .title { color: $white; } div { a { color: $two-color-black; } } } } .agreements { a { color: $two-color-black; } } } }
 }
 
-@media only screen and (max-width: 1450px) {
+@media only screen and (max-width: 1600px) {
     footer {
-padding: 0px 250px 25px 250px;
+            padding: 0px 275px 25px 275px;
 
         .right {
             .links {
                 gap: 50px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    footer {
+            padding: 0px 250px 25px 250px;
+
+        .right {
+            .links {
+                gap: 45px;
             }
         }
     }
@@ -111,23 +123,11 @@ padding: 0px 250px 25px 250px;
 
 @media only screen and (max-width: 1280px) {
     footer {
-        padding: 0px 225px 25px 225px;
+            padding: 0px 200px 25px 200px;
 
         .right {
             .links {
-                gap: 50px;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    footer {
-        padding: 0px 125px 25px 125px;
-
-        .right {
-            .links {
-                gap: 40px;
+                gap: 45px;
             }
         }
     }

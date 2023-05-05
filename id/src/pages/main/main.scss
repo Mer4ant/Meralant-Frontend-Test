@@ -179,41 +179,26 @@ main {
     }
 }
 
-@media only screen and (max-width: 1450px) {
+@media only screen and (max-width: 1600px) {
+    main {
+        padding: 77px 275px 0 275px;
+    }
+}
+
+@media only screen and (max-width: 1360px) {
     main {
         padding: 77px 250px 0 250px;
+
+        .section-two { h2 { font-size: 50px; } }
+        .section-tree { h2 { font-size: 60px; } }
     }
 }
 
 @media only screen and (max-width: 1280px) {
     main {
-        padding: 77px 225px 0 225px;
+        padding: 77px 200px 0 200px;
 
-        .section-two {
-            img {
-                max-width: calc(100% + 75px);
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    main {
-        padding: 77px 125px 0 125px;
-        
-        .section-two {
-            h2 {
-                font-size: 48px;
-            }
-            img {
-                max-width: calc(100% + 50px);
-            }
-        }
-
-        .section-tree {
-            h2 {
-                font-size: 58px;
-            }
-        }
+        .section-two { h2 { font-size: 48px; } }
+        .section-tree { h2 { font-size: 58px; } }
     }
 }

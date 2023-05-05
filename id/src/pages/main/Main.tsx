@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState }from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
 import Navbar from '../../components/navbar/navbar'

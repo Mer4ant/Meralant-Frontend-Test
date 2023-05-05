@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Confetti from "react-confetti";
 
 import './footer.scss'
 
 function Footer() {
+
+    const [showConfetti, setShowConfetti] = useState(false);
+
+    const handleButtonClick = () => {
+        setShowConfetti(true);
+        setTimeout(() => {
+            setShowConfetti(false);
+        }, 3000);
+    };
     return (
         <footer>
 
@@ -25,7 +35,16 @@ function Footer() {
                             <a href='#'>Frappe</a>
                             <a href='#'>Meralant ID</a>
                             <a href='#'>ID login</a>
-                            <a href='#'>Secret button</a>
+                            <a href='#' onClick={handleButtonClick}>Secret button</a>
+                            {showConfetti && (
+                                <Confetti
+                                    recycle={false}
+                                    numberOfPieces={200}
+                                    width={window.innerWidth}
+                                    height={window.innerHeight}
+                                    onConfettiComplete={() => setShowConfetti(false)}
+                                />
+                            )}
                         </div>
                     </div>
                     <div className='about'>
