@@ -1,0 +1,99 @@
+@import '../../pages/main/main.scss';
+
+footer {
+    margin-top: 125px;
+    padding: 0px 350px 25px 350px;
+    font-family: 'SF UI Display';
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+        display: flex;
+        flex-direction: column;
+
+        .text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: $black;
+        }
+
+        .copyright {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: $two-color-white;
+
+            margin-top: 100px;
+        }
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+
+        .links {
+            display: flex;
+            gap: 100px;
+        
+            .services, .about, .follow-us {
+                .title {
+                    font-family: 'SF UI Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: $black;
+                }
+                div {
+                    display: flex;
+                    flex-direction: column;
+
+                    a {
+                        &:first-child {
+                            margin-top: 15px;
+                        }
+                        
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: $two-color-white;
+
+                        margin-top: 10px;
+                        
+
+                        text-decoration: none;
+                    }
+                }
+            }
+
+        }
+    
+        .agreements {
+            display: flex;
+            justify-content: flex-end;
+
+            margin-top: 50px;
+            a {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                text-decoration: none;
+                color: $two-color-white;
+
+                margin-left: 25px;
+            }
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    footer {
+        .left { .text { color: $white; } .copyright { color: $two-color-black; } }
+        .right { .links { .services, .about, .follow-us { .title { color: $white; } div { a { color: $two-color-black; } } } } .agreements { a { color: $two-color-black; } } }
+    }
+}
