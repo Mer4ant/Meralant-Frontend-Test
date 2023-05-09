@@ -9,5 +9,14 @@ Frontend test of some Meralant pages.
 
 <hr>
 
+
+### 📄 Changelog
+
+Version 0.1.3 (2023-09-05)
+
+- Corrected dependencies
+
+<hr>
+
 ### ⛔ It's an open source project, but IT's NOT free software.
 > Thanks.
