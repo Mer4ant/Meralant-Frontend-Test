@@ -12,7 +12,7 @@ Frontend test of some Meralant pages.
 
 ### 📄 Changelog
 
-Version 0.0.13 (2023-09-05)
+Version 0.0.14 (2023-09-05)
 
 - Corrected dependencies
 
